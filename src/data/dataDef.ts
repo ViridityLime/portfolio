@@ -1,3 +1,8 @@
+import { ReactNode } from 'react';
+
+/// <reference types="react" />
+
+
 import {StaticImageData} from 'next/image';
 import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
@@ -23,7 +28,7 @@ export interface HomepageMeta {
 export interface Hero {
   imageSrc: string;
   name: string;
-  description: JSX.Element;
+  description: ReactNode;
   actions: HeroActionItem[];
 }
 
@@ -81,6 +86,11 @@ export interface PortfolioItem {
   description: string;
   url: string;
   image: string | StaticImageData;
+  technologies?: string[];
+  features?: string[];
+  screenshots?: (StaticImageData | string)[];
+  detailedDescription?: string;
+  
 }
 
 /**
@@ -90,7 +100,8 @@ export interface TimelineItem {
   date: string;
   location: string;
   title: string;
-  content: JSX.Element;
+  content: ReactNode;
+  image?: string; 
 }
 
 /**

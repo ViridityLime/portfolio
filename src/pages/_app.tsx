@@ -4,8 +4,9 @@ import '../globalStyles.scss';
 import type {AppProps} from 'next/app';
 import {memo} from 'react';
 
-const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
-  return (
+import { ReactElement } from 'react';
+
+const MyApp = memo(({Component, pageProps}: AppProps): ReactElement => {  return (
     <>
       <Component {...pageProps} />
     </>

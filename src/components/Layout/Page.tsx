@@ -15,7 +15,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content={description} name="description" />
 
         {/* several domains list the same content, make sure google knows we mean this one. */}
-        <link href={`https://reactresume.com${pathname}`} key="canonical" rel="canonical" />
+        <link href={`https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:4f041cc4-ca8f-4ce8-8bf8-ef2b89cd1fd8`} key="canonical" rel="canonical" />
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/icon.svg" rel="icon" type="image/svg+xml" />

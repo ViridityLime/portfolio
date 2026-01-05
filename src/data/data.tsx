@@ -11,22 +11,24 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import tu20Group from '../images/tu20group.jpg';
+import tu20Judge from '../images/tu20judge.jpg';
+import tu20Win from '../images/tu20win.jpg';
+import WBR from '../images/wbr.png';
+import WBRteam from '../images/W25team.jpg';
+import waterloo from '../images/waterloo.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import tu20Logo from '../images/tu20-logo.png'; 
+import kftLogo from '../images/kft-logo.png';
+import decaLogo from '../images/deca-logo.png';
+import ibLogo from '../images/ib-logo.png'
 import {
   About,
   ContactSection,
@@ -44,8 +46,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Frank Lin - Portfolio',
+  description: "Hi everyone! Welcome to my personal website :D",
 };
 
 /**
@@ -69,24 +71,23 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Frank Lin`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+       I'm a first year student at the <strong className="text-stone-100">University of Waterloo</strong>, currently enrolled
+        in a <strong className="text-stone-100">Bachelor's of Computing and Financial Management.</strong> 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, I love playing <strong className="text-stone-100">Badminton</strong>,
+        trying new songs on <strong className="text-stone-100">piano</strong>, and playing games with my friends{' '}
+        .
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://drive.google.com/file/d/1mZdCTGyNewUMhpLWrr5RclQ-i3NrRwD0/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +105,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Hello everyone! My name is Frank, and I'm a Computing + Financial Management student at the University of Waterloo. I'm eager to learn more about building projects using CS, and how it can be used to connect to the financial industry. I also take part in any case competitions that come up, so you might see me at one from time to time. In my free time, I enjoy playing piano, badminton, and spending time with friends. I'm always down for a quick game of badminton if you reach out :) That's all for now, I'm looking forward to the rest of my Waterloo journey!`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Milton, ON', Icon: MapIcon},
+    {label: 'Age', text: '18', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Canadian / Chinese', Icon: FlagIcon},
+    {label: 'Interests', text: 'Badminton, Piano, Gaming', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Waterloo', Icon: AcademicCapIcon},
+    {label: 'Program', text: 'Computing and Financial Management', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -130,65 +129,32 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
         level: 5,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Mandarin',
+        level: 5,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Soft Skills',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Leadership',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Time Management',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Communication',
+        level: 8,
       },
     ],
   },
+  
 ];
 
 /**
@@ -196,20 +162,39 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
+  title: 'Benchmark-Tracking Portfolio System',
+  description: 'An automatic allocation model for TSX benchmark tracking',
+  detailedDescription: 'This comprehensive portfolio management system uses advanced algorithms to track and replicate market benchmark performance. Built with Python, it processes real-time market data to provide accurate portfolio positioning.',
+  features: [
+    'Designed an automatic allocation model that invests across a benchmark composed of the TSX',
+    'Achieved the closest return to the market goal out of 50 other competitors, with a differential of only 0.02%',
+    'Implemented optimization algorithms for portfolio rebalancing',
+    'Created data visualization tools for performance tracking'
+  ],
+  technologies: ['Python', 'NumPy', 'Pandas', 'Matplotlib'],
+  url: 'https://github.com/yourusername/project',
+  image: porfolioImage1,
+},
+
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
+  title: 'Tech Under Twenty',
+  description: 'Led a national non-profit organization connecting high school students with career opportunities',
+  detailedDescription: 'As President of Tech Under Twenty, I scaled the organization to national reach across Canada, managing over 30 executives and establishing chapters in 20 schools. Through strategic partnerships and events, we connected hundreds of students with hiring companies and provided essential business education.',
+  technologies: ['Leadership', 'Event Management', 'Marketing', 'Fundraising'],
+  features: [
+    'Spearheaded competitions and events that connected high-school students with hiring companies; led 30+ executives in event operations; directed 6 large-scale events with 200+ participants',
+    'Launched TU20 chapters in 20 Canadian schools; designed and delivered business-pitch curriculum for 150+ students; managed 20+ chapter leads nationwide',
+    'Scaled TU20 to national reach through strategic marketing and direct outreach; established presence in 2 new provinces (Alberta and Nova Scotia)',
+    'Secured corporate funding through sponsor-package creation, cold outreach, and stakeholder meetings'
+  ],
+
+  url: 'https://techundertwenty.com', // Update with actual URL
+  image: porfolioImage2,
+  screenshots: [porfolioImage2, tu20Group, tu20Judge, tu20Win] // Add more images if you have them
+},
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
+    title: 'Co-founder of Carbon Trackers',
+    description: 'Using our product, we plan to reduce carbon emissions in our environment by tracking a user’s carbon footprint. By allowing the user to be aware of their carbon footprint and daily activities that cause it, users can reduce carbon emissions in the environment by following the solutions the app provides. With our start up, we aim to cleanse our atmosphere and bring our planet one step closer to a carbon-free environment. Sheridan college has generously granted us with a $2000 honorarium to fund our startup project',
     url: 'https://reactresume.com',
     image: porfolioImage3,
   },
@@ -225,42 +210,22 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://reactresume.com',
     image: porfolioImage5,
   },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+
+   {
+    title: 'Waterloo Business Review',
+    description: 'Editor of a team that wrote a fully reasearched business article',
+    detailedDescription: 'As a team editor, I worked with a team to draft and polish a business article reviewing real-world market trends',
+    technologies: ['Research', 'Team Management', 'Editing', 'Outreach'],
+    features: [
+    'Working as an editor for the Waterloo Business Review organization',
+    'Attend weekly meetings to stay updated with the rest of the executive team',
+    'Initiates team meetings with 4 other executives to ideate, research, structure, and write out a polished article',
+    'Outreach to company executives and university upper-years to gather meaningful data'],
+    url: 'https://waterloobusinessreview.org/about.html',
+    image: WBRteam,
+    },
+ 
+  
 ];
 
 /**
@@ -268,111 +233,147 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'April 2030',
+    location: 'Waterloo University',
+    image: waterloo,
+
+    title: 'Computing and Financial Management',
+    content: <p>In my program, I learn coding from the David Cheriton school of Computer Science, as well as fundamental finance knowledge from the School of Accounting and Finance. CFM combines both of these skills,
+       teaching me to use knowledge of both Finance and CS to build meaningful, real-world projects that can be used in markets.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2025',
+    location: 'White Oaks Secondary School',
+    image:ibLogo,
+    title: 'Graduate of the International Baccalaureate Program',
+    content: <p>For two years, I've studied under the IB program, taking rigorous courses like High Level Mathematics and Economics to enhance both my problem-solving and understanding of global markets. 
+      The IB program pushed me to maximize my capabilities through hard work and dedication, and the results were well worth it.
+    </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'November 2025 - Present',
+    location: 'Waterloo Business Review',
+    title: 'Team Editor',
+    image: WBR,
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc list-outside ml-5 space-y-2 text-sm md:text-base">
+        <li className="pl-2">Working as an editor for the Waterloo Business Review organization</li>
+        <li className="pl-2">Attends weekly meetings to stay updated with the rest of the executive team</li>
+        <li className="pl-2">Initiates team meetings with 4 other executives to ideate, research, structure, and write out a polished article</li>
+        <li className="pl-2">Outreach to company executives and university upper-years to gather meaningful data </li>
+      </ul>
     ),
+
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'August 2023 - June 2025',
+    location: 'Tech Under Twenty',
+    title: 'Non-profit President',
+    image: tu20Logo,
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc list-outside ml-5 space-y-2 text-sm md:text-base">
+        <li className="pl-2">Spearheaded competitions and events that connected high-school students with hiring companies; led 30+ executives in event operations; directed 6 large-scale events with 200+ participants.</li>
+        <li className="pl-2">Launched TU20 chapters in 20 Canadian schools; designed and delivered business-pitch curriculum for 150+ students; managed 20+ chapter leads nationwide.</li>
+        <li className="pl-2">Scaled TU20 to national reach through strategic marketing and direct outreach; established presence in 2 new provinces (Alberta and Nova Scotia).</li>
+        <li className="pl-2">Secured corporate funding through sponsor-package creation, cold outreach, and stakeholder meetings.</li>
+      </ul>
+    ),
+  },
+ {
+    date: 'August 2023 - August 2024',
+    location: 'Ontario DECA',
+    title: 'DECA Masters Council',
+    image: decaLogo,
+
+    content: (
+      <ul className="list-disc list-outside ml-5 space-y-2 text-sm md:text-base">
+        <li className="pl-2">Selected as one of the 10 members of the DECA masters council in Ontario</li>
+        <li className="pl-2">Helping over 10,500 Ontario DECA competitors by providing case studies workshops and training to enhance competitors' chances of qualifying and competing for international competitions.
+</li>
+        <li className="pl-2">Working alongside the provincial officers and fellow DECA masters to lead workshops, training competitors for Provincial and ICDC levels of competition
+</li>
+      </ul>
+    ),
+  },
+
+
+
+  {
+    date: 'July 2021 - August 2025',
+    location: 'Kung Fu Tea',
+    title: 'Team Supervisor',
+    image: kftLogo,
+
+    content: (
+      <ul className="list-disc list-outside ml-5 space-y-2 text-sm md:text-base">
+        <li className="pl-2">Supervised daily operations, balancing bubble tea making and customer service while maximizing efficiency.</li>
+        <li className="pl-2">Ensured customer satisfaction and high-quality service by actively listening to customer needs.</li>
+      </ul>
     ),
   },
 ];
-
 /**
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
+
     {
-      name: 'John Doe',
-      text: `
-Use this as an opportunity to promote what it is like to work with you.
-High value testimonials include ones from current or past co-workers,
-managers, or from happy clients.
-`,
-      image:
-        'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Steve Jobs',
+      text: 'The people who are crazy enough to think they can change the world are the ones who do',
+      image: 'https://hips.hearstapps.com/hmg-prod/images/apple-ceo-steve-jobs-speaks-during-an-apple-special-event-news-photo-1683661736.jpg?crop=0.757xw:0.534xh;0.0799xw,0.0372xh&resize=1400:*',
+    },
+     {
+      name: 'Wayne Gretzky',
+      text: 'You miss 100% of the shots you do not take',
+      image: 'https://media.wnyc.org/i/800/0/l/85/1/waynegretzky.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: `
-Here you should write some nice things that someone has said about you.
-Encourage them to be specific and include important details
-(notes about a project you were on together, impressive quality produced, etc).
-`,
-      image:
-        'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Martin Luther King Jr.',
+      text: 'I have a dream',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMWlcdGnGL37Lo4-ZAqVNH3QCAMkgYms6x3w&s',
     },
     {
-      name: 'Someone else',
-      text: `
-Add several of these, and keep them as fresh as possible.
-Be sure to focus on quality testimonials with strong highlights
-of your skills and work ethic.
-`,
-      image:
-        'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Master Oogway',
+      text: 'Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present',
+      image: 'https://shapes.inc/api/public/avatar/masteroogway-jtvx',
     },
+    {
+      name: 'Mario',
+      text: 'Lets a go!',
+      image: 'https://ssb.wiki.gallery/images/thumb/2/2e/Mario_SSB4_Alt.png/250px-Mario_SSB4_Alt.png',
+    },
+    
+    
   ],
 };
-
 
 /**
  * Contact section
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Feel free to get in touch!',
+  description: 'Reach out to me here:',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Frank.linxiaohong@gmail.com',
+      href: 'mailto:Frank.linxiaohong@gmail.com',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@froncliosis',
+      href: 'https://www.instagram.com/froncliosis/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Viridity_Lime',
+      href: 'https://github.com/ViridityLime/FrankLin.github.io',
     },
   ],
 };
@@ -381,9 +382,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ViridityLime/FrankLin.github.io'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/frank-lin-4446a4214/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/froncliosis/'},
 ];
