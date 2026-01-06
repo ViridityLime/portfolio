@@ -195,7 +195,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Co-founder of Carbon Trackers',
     description: 'Using our product, we plan to reduce carbon emissions in our environment by tracking a user’s carbon footprint. By allowing the user to be aware of their carbon footprint and daily activities that cause it, users can reduce carbon emissions in the environment by following the solutions the app provides. With our start up, we aim to cleanse our atmosphere and bring our planet one step closer to a carbon-free environment. Sheridan college has generously granted us with a $2000 honorarium to fund our startup project',
-    url: 'https://reactresume.com',
+    url: 'https://www.linkedin.com/company/carbon-trackers/?viewAsMember=true',
     image: porfolioImage3,
   },
   {
