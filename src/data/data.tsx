@@ -172,7 +172,7 @@ export const portfolioItems: PortfolioItem[] = [
     'Created data visualization tools for performance tracking'
   ],
   technologies: ['Python', 'NumPy', 'Pandas', 'Matplotlib'],
-  url: 'https://github.com/yourusername/project',
+  url: 'https://github.com/ViridityLime/Benchmark-Tracking-Portfolio-System-.git',
   image: porfolioImage1,
 },
 
@@ -198,12 +198,20 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://www.linkedin.com/company/carbon-trackers/?viewAsMember=true',
     image: porfolioImage3,
   },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
+   {
+  title: 'Power BI Dashboard',
+  description: 'Built an interactive dashboard displaying stock data with visuals and market analysis',
+  detailedDescription: 'Built an interactive dashboard displaying stock data with visuals and market analysis',
+  technologies: ['Power BI', 'DAX', 'M'],
+  features: [
+    'Built an interactive dashboard with real-time portfolio tracking and broad market analysis; Includes customizable date ranges and intervals with dynamic graph adjustment and a live news feed explaining recent price movements',
+    'Uses visuals such as candlestick charts, line graphs, and clustered column charts displaying ticker price and volume; includes analytical data such as P/E ratios, dividend yield, updated closing prices and price/sale ratios'
+
+  ],
+
+  url: 'https://app.powerbi.com/groups/me/reports/b5c83cf6-4c83-493d-92a9-0cf15fc6e076/6e4eb9265de650088237?experience=power-bi', // Update with actual URL
+  image: porfolioImage4,
+},
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
