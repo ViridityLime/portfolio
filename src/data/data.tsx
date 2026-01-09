@@ -16,7 +16,6 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import tu20Group from '../images/tu20group.jpg';
 import WBR from '../images/wbr.png';
 import WBRteam from '../images/W25team.jpg';
@@ -210,12 +209,7 @@ export const portfolioItems: PortfolioItem[] = [
   url: 'https://app.powerbi.com/groups/me/reports/b5c83cf6-4c83-493d-92a9-0cf15fc6e076/6e4eb9265de650088237?experience=power-bi', // Update with actual URL
   image: porfolioImage4,
 },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
+
 
    {
     title: 'Waterloo Business Review',
