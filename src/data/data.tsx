@@ -190,7 +190,7 @@ export const portfolioItems: PortfolioItem[] = [
 
   url: 'https://techundertwenty.com', // Update with actual URL
   image: porfolioImage2,
-  screenshots: [porfolioImage2, tu20Group, tu20Judge, tu20Win] // Add more images if you have them
+  screenshots: [porfolioImage2, tu20Group] // Add more images if you have them
 },
   {
     title: 'Co-founder of Carbon Trackers',
