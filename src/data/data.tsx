@@ -18,8 +18,6 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import tu20Group from '../images/tu20group.jpg';
-import tu20Judge from '../images/tu20judge.jpg';
-import tu20Win from '../images/tu20win.jpg';
 import WBR from '../images/wbr.png';
 import WBRteam from '../images/W25team.jpg';
 import waterloo from '../images/waterloo.jpg';
